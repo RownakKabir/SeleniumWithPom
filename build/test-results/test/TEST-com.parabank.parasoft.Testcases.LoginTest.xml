@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.parabank.parasoft.Testcases.LoginTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-08-22T04:57:40" hostname="ROWNAKQC" time="10.169">
+  <properties/>
+  <testcase name="loginShouldFail" classname="com.parabank.parasoft.Testcases.LoginTest" time="0.942"/>
+  <testcase name="loginshouldfail" classname="com.parabank.parasoft.Testcases.LoginTest" time="0.995"/>
+  <testcase name="loginshouldsuccess" classname="com.parabank.parasoft.Testcases.LoginTest" time="1.254"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
