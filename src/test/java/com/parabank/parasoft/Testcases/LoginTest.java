@@ -34,7 +34,7 @@ public class LoginTest extends BaseTest{
                  .fillPassword("sqa")
                  .clickloginBtn();
 
-        Assert.assertTrue(loginpage.hasLogout());
+        Assert.assertTrue(overviewPage.hasLogout());
 
     }
 }
