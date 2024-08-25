@@ -60,9 +60,6 @@ public class LoginPage extends BasePage {
 
     }
 
-    public boolean hasLogout(){
-
-        return  getWebElements(By.cssSelector("a[href^='logout' ]")).size()> 0;
-    }
+  
 
 }
