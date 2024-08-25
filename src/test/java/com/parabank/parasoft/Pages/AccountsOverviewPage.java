@@ -7,8 +7,7 @@ public class AccountsOverviewPage extends BasePage {
         super(driver);
     }
   public boolean hasLogout(){
-
-        return  getWebElements(By.cssSelector("a[href^='logout' ]")).size()> 0;
+return  getWebElements(By.cssSelector("a[href^='logout' ]")).size()> 0;
     }
 
 
