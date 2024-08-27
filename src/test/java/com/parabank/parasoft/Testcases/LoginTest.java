@@ -8,9 +8,8 @@ import org.testng.annotations.Test;
 public class LoginTest extends BaseTest{
     @Test
     public void loginshouldfail(){
-        LoginPage loginpage=page.getInstance(LoginPage.class);
-        loginpage=loginpage
-                .fillPassword("1233")
+        LoginPage loginpage=page.getInstance(LoginPage.class)
+                .fillPassword(getUsername())
                 .clickloginLinkBtn();
 
         Assert.assertTrue(loginpage.hasError());
@@ -19,22 +18,21 @@ public class LoginTest extends BaseTest{
     }
     @Test
     public void loginShouldFail(){
-        LoginPage loginpage= page.getInstance(LoginPage.class);
-        loginpage=loginpage.fillUsername("dgjhg")
-                .fillPassword("5345")
+        LoginPage loginpage= page.getInstance(LoginPage.class)
+                .fillUsername(getUsername())
+                .fillPassword(getPassword())
                 .clickloginLinkBtn();
         Assert.assertTrue(loginpage.hasError());
 
     }
     @Test
     public void  loginshouldsuccess(){
-         LoginPage loginpage=page.getInstance(LoginPage.class);
-         AccountsOverviewPage overviewPage=loginpage
-                 .fillUsername("sqa")
-                 .fillPassword("sqa")
+        AccountsOverviewPage overviewPage=page.getInstance(LoginPage.class)
+                 .fillUsername(getUsername())
+                 .fillPassword(getPassword())
                  .clickloginBtn();
 
-        Assert.assertTrue(loginpage.hasLogout());
+        Assert.assertTrue(overviewPage.hasLogout());
 
     }
 }

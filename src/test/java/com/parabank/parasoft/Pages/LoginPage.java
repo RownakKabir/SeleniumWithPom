@@ -60,9 +60,13 @@ public class LoginPage extends BasePage {
 
     }
 
-    public boolean hasLogout(){
 
-        return  getWebElements(By.cssSelector("a[href^='logout' ]")).size()> 0;
+
+    public AccountsOverviewPage doLogin(String username,String password){
+
+        return fillUsername(username)
+                .fillPassword(password)
+                .clickloginBtn();
     }
 
 }
